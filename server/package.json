@@ -9,13 +9,16 @@
   "author": "Marcos Bérgamo",
   "license": "BSD",
   "dependencies": {
+    "baucis": "^1.0.0-candidate.8",
     "body-parser": "^1.2.2",
     "cookie-parser": "^1.1.0",
-    "express": "^4.4.0",
-    "express-session": "^1.2.1",
+    "express": "^4.4.2",
     "feed-read": "0.0.1",
     "mongodb": "^1.4.5",
+    "mongoose": "^3.8.12",
     "read-json": "0.0.0",
+    "request": "^2.36.0",
+    "requi": "^0.2.2",
     "slug": "^0.5.0",
     "xmlreader": "^0.2.3"
   },
