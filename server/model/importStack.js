@@ -13,7 +13,8 @@ var stackSchema = new Schema({
     },
 });
 
-var importStack = mongoose.model('importStack', stackSchema);
+module.exports = mongoose.model('importStack', stackSchema);
+
 /*
 var stk = new importStack({
     title: "Vodka",

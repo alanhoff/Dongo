@@ -3,10 +3,9 @@ var mongoose = require('mongoose');
 var request = require('request');
 
 function checkData(url, callback){
-    request(url, {timeout: 5000}, function(err, res, body) {
+    request(url, function(err, res, body) {
         if (err)
             throw err;
-
         callback(feed.identify(body));
     });
 
@@ -47,11 +46,13 @@ function configure(callback){
 }
 
 function load(callback){
+
     console.log('Loading stack...');
+    importStack = require(__dirname + '/../model/importStack');
 
     importStack.find(function(err, stack) {
         if (err) return console.error(err);
-            console.dir(stack);
+            console.log(stack);
     });
 
 }

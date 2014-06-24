@@ -17,8 +17,12 @@ for(var i in packs){
     if(packs.hasOwnProperty(i)){
         var rss = new packs[i]();
         rss.load();
+        /*rss.checkData('http://craphound.com/?feed=rss2', function(data){
+            console.log(data);
+        });*/
     }
 }
+
 //console.log(packs);
 //Rss.load();
 
