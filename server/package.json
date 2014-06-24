@@ -9,6 +9,7 @@
   "author": "Marcos Bérgamo",
   "license": "BSD",
   "dependencies": {
+    "async": "^0.9.0",
     "baucis": "^1.0.0-candidate.8",
     "body-parser": "^1.2.2",
     "cookie-parser": "^1.1.0",
